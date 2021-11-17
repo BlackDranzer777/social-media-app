@@ -171,3 +171,20 @@ exports.getGetFriends = async(req,res,next) => {
             res.status(500).json(err);
         }
 }
+
+//getUserProfilePicture
+exports.getGetProfilePicture = async(req,res,next) => {
+    console.log("API hit");
+    try {
+        const user = await User.findById(req.params.userId);
+        return res.status(200).json(user.profilePicture);
+    } catch (error) {
+        return res.status(500).json(error);
+    }
+
+    // User.findById(req.params.userId).then(user => {
+    //     return res.status(200).json(user.profilePicture);
+    // }).catch(err => {
+    //     return res.status(500).json(err);
+    // });
+}
