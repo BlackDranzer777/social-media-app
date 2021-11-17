@@ -7,5 +7,6 @@ router.get('/', userController.getGetUser);
 router.put('/:id/follow', userController.putFollowUser);
 router.put('/:id/unfollow', userController.putUnfollowUser);
 router.get('/friends/:userId', userController.getGetFriends);
+router.get('/profilePicture/:userId', userController.getGetProfilePicture);
 
 module.exports = router;
