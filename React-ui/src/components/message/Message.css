@@ -13,6 +13,7 @@
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
     margin-right: 10px;
 }
 

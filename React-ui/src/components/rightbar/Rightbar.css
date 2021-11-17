@@ -3,6 +3,13 @@
     height: calc(100vh - 50px);
 }
 
+@media screen and (max-width: 952px) {
+    .rightbar {
+      display: none;
+    }
+}
+  
+
 .rightbarWrapper{
     padding: 20px 20px 0 0;
 }
@@ -69,7 +76,13 @@
 }
 
 .rightbarInfo{
+    padding: 10px;
     margin-bottom: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    margin: 30px 0;
 }
 
 .rightbarInfoItem{
@@ -95,9 +108,14 @@
 }
 
 .rightbarFollowings{
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: inherit;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75);
     /* column-gap: 20px; */
 }
 
@@ -107,10 +125,12 @@
     margin-bottom: 20px;
     cursor: pointer;
     padding: 5px;
+    align-items: center;
 }
 
 .rightbarFollowingName{
     color: black;
+    padding: 5px;
 }
 
 .rightbarFollowingName:active{

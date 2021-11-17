@@ -1,10 +1,18 @@
 .sidebar{
     flex: 3;
+    /* background-color: #e8e8f2; */
     height: calc(100vh - 50px);
     overflow-y:scroll;
     top: 50px;
     position: sticky;
 }
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      display: none;
+    }
+}
+  
 
 ::-webkit-scrollbar{
     width: 5px;

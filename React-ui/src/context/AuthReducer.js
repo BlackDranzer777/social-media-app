@@ -35,7 +35,7 @@ const AuthReducer = (state, action) => {
                         (following) => following !== action.payload
                     )]
                 }
-            }
+            };
         default:
             return state;
     }

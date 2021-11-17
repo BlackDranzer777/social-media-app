@@ -88,7 +88,7 @@ export default function Rightbar({ user }) {
                         {followed ? <Remove/> : <Add/>}
                     </button>
                 }
-                <h4 className="rightbarTitle">User Information</h4>
+                {/* <h4 className="rightbarTitle">User Information</h4> */}
                 <div className="rightbarInfo">
                     <div className="rightbarInfoItem">
                         <span className="rightbarInfoKey">City:</span>
@@ -103,7 +103,7 @@ export default function Rightbar({ user }) {
                         <span className="rightbarInfoValue">{user.relationship ? "In relationship" : "Single"}</span>
                     </div>
                 </div>
-                <h4 className="rightbarTitle">User Friends</h4>
+                <h4 className="rightbarTitle">User Followings</h4>
                 <div className="rightbarFollowings">
                     {friends.map(friend => {
                         // {console.log("Friend :",friend)}

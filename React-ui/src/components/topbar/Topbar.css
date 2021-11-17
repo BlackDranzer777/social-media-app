@@ -1,12 +1,15 @@
 .topBarContainer{
     height: 50px;
     width: 100%;
-    background-color: #1877f2;
+    /* background-color: #9163FB; */
+    background-color: #6c6ca5;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0px;
     z-index: 999;
+    overflow-y: hidden;
+    /* color: #E5DAFE; */
 }
 
 .topBarLeft{
@@ -14,15 +17,20 @@
 }
 
 .topBarCenter{
-    flex: 5;
+    flex: 6;
+    display: flex;
+    justify-content: center;
 }
 
 .topBarRight{
-    flex: 4;
+    flex: 3;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
+    align-items:center;
+    justify-content:flex-end;
+    color: #FEFFFD;
+    margin-right: 20px;
+    /* color: #E5DAFE; */
+    /* color: #F1E9FE !important; */
 }
 
 .topBarLink{
@@ -43,6 +51,7 @@
     position: relative;
 }
 
+
 .topBarIconBadge{
     width: 15px;
     height: 15px;
@@ -58,12 +67,24 @@
 }
 
 .logo{
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 20px;
     font-weight: bold;
-    color: white;
+    /* color: white; */
+    color: #FEFFFD;
     cursor: pointer;
 }
+
+.logo-symbol{
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    /* color: white; */
+    color: #FEFFFD;
+    cursor: pointer;
+    display: none;
+}
+
 
 .topBarImg{
     width: 32px;
@@ -72,10 +93,22 @@
     object-fit: cover;
     object-position: top;
     cursor: pointer;
+    align-items: center;
+}
+
+.topBarImg-mobile{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    display: none;
+    align-items: center;
 }
 
 .searchBar{
-    width: 100%;
+    width: 70%;
     height: 30px;
     background-color: white;
     border-radius: 30px;
@@ -93,3 +126,31 @@
     width: 70%;
     outline: none;
 }
+
+@media screen and (max-width: 700px) {
+    /* .topBarContainer .topBarCenter{
+      width: 100%;
+        float: none;
+    } */
+    .topBarLeft{
+        flex: 1;
+    }
+    .topBarCenter{
+        flex: 10;
+    }
+    .topBarRight{
+        flex: 1;
+    }
+    .searchBar{
+        width: 90%;
+    }
+    .topBarIconItem{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-symbol{
+        display: block;
+    }
+}  
